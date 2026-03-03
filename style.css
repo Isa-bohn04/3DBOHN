@@ -18,7 +18,7 @@ nav{
     background:#000;
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:60px;
     padding:20px;
     border-bottom:1px solid #1a1a1a;
     z-index:1000;
@@ -33,7 +33,7 @@ nav a{
 
 nav a:hover{
     color:#7c3aed;
-    transform:scale(1.2);
+    transform:scale(1.4);
 }
 
 /* BANNER */
