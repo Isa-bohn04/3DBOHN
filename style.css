@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px;
+    border-bottom:1px solid #1a1a1a;
+    z-index:1000;
+}
+
+nav a{
+    color:#aaa;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#7c3aed;
+}
+
+/* BANNER */
+.banner{
+    margin-top:100px;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(to bottom,#000,#0f0f0f);
+    border-bottom:1px solid #1a1a1a;
+}
+
+.banner h1{
+    font-size:40px;
+    font-weight:600;
+}
+
+.banner p{
+    color:#aaa;
+    margin-top:10px;
+}
+
+/* PRODUTOS */
+.produtos{
+    padding:60px 5%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card{
+    background:#111;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-info{
+    padding:20px;
+}
+
+.card-info h3{
+    font-size:18px;
+}
+
+.card-info p{
+    color:#aaa;
+    font-size:14px;
+    margin:8px 0;
+}
+
+.preco{
+    color:#7c3aed;
+    font-weight:600;
+    font-size:16px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #1a1a1a;
+    color:#aaa;
+}
+
+/* BOTÃO WHATS */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:#000;
+    padding:15px 18px;
+    border-radius:50%;
+    font-weight:bold;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
