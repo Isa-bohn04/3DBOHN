@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostruário 3D</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#secoes">SEÇÕES</a>
+        <a href="#chat">CHAT</a>
+        <a href="#info">INFO</a>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner" id="home">
+        <h1>Sua Marca 3D</h1>
+        <p>Figures • Chaveiros • Topos de bolo</p>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="produtos" id="secoes">
+
+        <div class="card" onclick="irParaSecao('figures.html')">
+            <img src="https://via.placeholder.com/400x300" alt="">
+            <div class="card-info">
+                <h3>Figure Personalizada</h3>
+                <p>Impressão 3D pintada à mão</p>
+                <div class="preco">R$ 450,00</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="irParaSecao('chaveiros.html')">
+            <img src="https://via.placeholder.com/400x300" alt="">
+            <div class="card-info">
+                <h3>Chaveiro Personalizado</h3>
+                <p>Modelagem exclusiva</p>
+                <div class="preco">R$ 35,00</div>
+            </div>
+        </div>
+
+        <div class="card" onclick="irParaSecao('topos.html')">
+            <img src="https://via.placeholder.com/400x300" alt="">
+            <div class="card-info">
+                <h3>Topo de Bolo</h3>
+                <p>Personalização completa</p>
+                <div class="preco">R$ 120,00</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- INFO -->
+    <section class="banner" id="info">
+        <h1>Sobre</h1>
+        <p>Impressões 3D personalizadas em Araucária/PR</p>
+    </section>
+
+    <footer>
+        © 2026 Sua Marca 3D
+    </footer>
+
+    <!-- WhatsApp -->
+    <a class="whatsapp" href="https://wa.me/5541999999999" target="_blank">W</a>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
