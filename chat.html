@@ -12,7 +12,30 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+<style>
+/* seção especial de contato */
+.contato-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
 
+/* deixa os cards maiores e centralizados */
+.contato-cards .card {
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+/* imagem menor e mais bonita */
+.contato-cards img {
+    height: 180px;
+    object-fit: contain;
+    padding: 20px;
+}
+</style>
     <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
@@ -36,29 +59,29 @@
         <p>Tudo que você pode imaginar! </p>
     </section>
 
-  <section class="produtos">
+<section class="contato-cards">
 
-  <!-- Card WhatsApp -->
+  <!-- WhatsApp -->
   <div class="card">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     
     <div class="card-info">
       <h3>WhatsApp</h3>
-      <p>Fale comigo diretamente pelo WhatsApp</p>
+      <p>Fale comigo diretamente</p>
       
-      <a href="https://wa.me/5541999999999" target="_blank" class="preco">
+      <a href="https://wa.me/5541995469616" target="_blank" class="preco">
         Conversar
       </a>
     </div>
   </div>
 
-  <!-- Card Instagram -->
+  <!-- Instagram -->
   <div class="card">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
     
     <div class="card-info">
       <h3>Instagram</h3>
-      <p>Acompanhe meu perfil no Instagram</p>
+      <p>Acompanhe meu perfil</p>
       
       <a href="https://instagram.com/seuusuario" target="_blank" class="preco">
         Acessar
@@ -67,5 +90,4 @@
   </div>
 
 </section>
-
   
