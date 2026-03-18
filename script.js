@@ -3,16 +3,22 @@ function irParaSecao(pagina){
 }
 
 // Scroll suave
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        const destino = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
 
-        if (destino) {
-            destino.scrollIntoView({
-                behavior: 'smooth'
-            });
+        if (href.startsWith('#')) {
+            e.preventDefault();
+
+            const destino = document.querySelector(href);
+
+            if (destino) {
+                destino.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         }
+
     });
 });
