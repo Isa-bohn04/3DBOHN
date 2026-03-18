@@ -6,8 +6,13 @@ function irParaSecao(pagina){
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-      
-            behavior: 'smooth'
-        });
+
+        const destino = document.querySelector(this.getAttribute('href'));
+
+        if (destino) {
+            destino.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
